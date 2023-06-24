@@ -1,0 +1,22 @@
+normalize data so that they are of the same dimension
+
+define row and col count to display figures
+
+create a subplot to put the figures in
+while loop to go through and pick one of each figure type, add it to the subplot
+then we show the subplot
+
+create the model
+sequential because we have linear stack of layers (input)
+flatten the input into a 1-D array of data, input shape(28,28) b/c each figure is 28x28
+512 output nodes, ReLU activation
+last layer has 10 nodes because there are 10 different types of classes, with a activiation func of softmax
+
+compile model using this loss function
+
+train model using model.fit by giving it training sets (sets epochs and batch_size)
+
+evaluate the model and get the error as well as the accuracy, using the test samples and the trained model
+print the loss rate and accuracy rate from the test
+
+calculate the prediction probability using the test set
